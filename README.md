@@ -1,6 +1,8 @@
-MoodPost - A Minimalist Mood-Based Journal
+## MoodPost - A Minimalist Mood-Based Journal
+
 MoodPost is a lightweight, interactive journaling app where users can write posts, tag emotions, and organize their thoughts. Built with vanilla JavaScript, HTML, and CSS, it stores entries locally in the browser for easy access.
-Features
+
+**Features**
 
 Create Posts: Users can write posts (up to 280 characters) with an optional author name. Posts can include hashtags (e.g., #express).
 Mood Reactions: Users can react to posts with three moods: Happy (😊), Sad (😢), and Fire (🔥). Reactions include a floating animation.
@@ -11,7 +13,7 @@ Persistent Storage: Posts are saved to localStorage and persist across page relo
 Responsive Design: The app is styled for both desktop and mobile devices (responsive at 480px and below).
 Animations: Includes subtle animations for rendering posts (slideUp, fadeIn) and mood reactions (floatUp).
 
-Tech Stack
+**Tech Stack**
 
 Vanilla JavaScript: Used for DOM manipulation, event handling, and state management.
 HTML: Structure of the app.
@@ -20,7 +22,7 @@ Font Awesome: For icons (e.g., user, archive, trash).
 Google Fonts: Uses the Poppins font for a clean, modern look.
 localStorage: For persisting posts across sessions.
 
-Test the App:
+**Test the App:**
 
 Create a post by entering some text (e.g., "Hello #test") and an optional author name, then click "Post".
 React to posts with mood buttons (😊, 😢, 🔥).
@@ -29,7 +31,7 @@ Switch between "Feed" and "Archive" tabs to view active or archived posts.
 
 
 
-Usage
+**Usage**
 
 Creating a Post:
 
@@ -61,7 +63,7 @@ Use the "Feed" and "Archive" tabs to switch between active and archived posts.
 
 
 
-Styling
+**Styling**
 The app uses a custom style.css file with the following features:
 
 CSS Variables: Colors and shadows are defined using CSS custom properties (e.g., --primary: #31473A).
