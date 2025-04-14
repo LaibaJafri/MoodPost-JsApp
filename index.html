@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoodBlog</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+
+  <div class="app">
+    <header>
+      <h1 class="logo">
+        MoodPost
+      </h1>
+      <p class="tagline">A moodboard you can write on</p>
+    </header>
+
+    <section class="composer">
+      <form id="postForm">
+        <div class="author-input">
+          <i class="fas fa-user"></i>
+          <input type="text" id="postAuthor" placeholder="Your name (optional)">
+        </div>
+        <textarea class="post-input" id="postContent" placeholder="What's on your mind? #express" maxlength="280"></textarea>
+        <div class="composer-footer">
+          <div class="char-counter">
+            <span id="charRemaining">280</span> characters left
+          </div>
+          <button type="submit" class="post-btn">
+            <i class="fas fa-paper-plane"></i> Post
+          </button>
+        </div>
+      </form>
+    </section>
+
+    <nav class="tabs">
+      <button class="tab active" data-tab="feed">
+        <i class="fas fa-stream"></i> Feed
+      </button>
+      <button class="tab" data-tab="archive">
+        <i class="fas fa-archive"></i> Archive
+      </button>
+    </nav>
+
+    <section class="posts-container active" id="feedContainer">
+      <div class="empty-state">
+        <i class="fas fa-comment-slash"></i>
+        <p>No posts yet. Be the first to share!</p>
+      </div>
+    </section>
+
+    <section class="posts-container" id="archiveContainer">
+      <div class="empty-state">
+        <i class="fas fa-archive"></i>
+        <p>No archived posts yet</p>
+      </div>
+    </section>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
